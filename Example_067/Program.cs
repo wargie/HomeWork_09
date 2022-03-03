@@ -8,35 +8,13 @@ int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
+for (int i = M; i <= N; i++)
+    {
+        Console.Write($"{i} ");
+    }
 
 if (M >= N)
     {
         Console.Write("Необходимо ввести N больше M");
         return;
     }
-    
-    for (int i = M; i <= N; i++) {
-        Console.Write("{0} ", i);
-    }
-
-
-/*void ShowNumberMToN(int M, N)
-{
-    if (M < N, M == N) 
-        {
-            Console.WriteLine("Число М должно быть больше N");
-        }
-    else 
-        {
-            if (number == 1) Console.Write(number);
-
-            else
-    {
-        Console.Write(number);
-        ShowNumberMToN(number - 1);
-    }
-}
-
-int number = 10;
-ShowNumberMToN(number);
-*/
