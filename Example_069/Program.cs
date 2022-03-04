@@ -12,7 +12,7 @@ int sum = SumNumber(M, N);
 int SumNumber(int firstNumber, int secondNumber)
 {
     if (firstNumber == secondNumber) return firstNumber;
-    else if (firstNumber > secondNumber) return firstNumber + SumNumber(firstNumber - 1, secondNumber);
+        else if (firstNumber > secondNumber) return firstNumber + SumNumber(firstNumber - 1, secondNumber);
             else return firstNumber + SumNumber(firstNumber + 1, secondNumber);
 }
 
