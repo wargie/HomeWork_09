@@ -16,4 +16,4 @@ int SumNumber(int firstNumber, int secondNumber)
             else return firstNumber + SumNumber(firstNumber + 1, secondNumber);
 }
 
-Console.WriteLine($"Сумма равна элементов от {M} до {N} равна {sum}");
+Console.WriteLine($"Сумма элементов от {M} до {N} равна {sum}");
