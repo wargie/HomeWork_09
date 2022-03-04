@@ -8,10 +8,10 @@ Console.Write("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
 int SumNumber(int firstNumber, int secondNumber)
-{
-    if (firstNumber == secondNumber) return firstNumber;
-        else if (firstNumber > secondNumber) return firstNumber + SumNumber(firstNumber - 1, secondNumber);
-            else return firstNumber + SumNumber(firstNumber + 1, secondNumber);
-}
+    {
+        if (firstNumber == secondNumber) return firstNumber;
+            else if (firstNumber > secondNumber) return firstNumber + SumNumber(firstNumber - 1, secondNumber);
+                else return firstNumber + SumNumber(firstNumber + 1, secondNumber);
+    }
 
 Console.WriteLine($"Сумма элементов от {M} до {N} равна {SumNumber(M, N)}");
