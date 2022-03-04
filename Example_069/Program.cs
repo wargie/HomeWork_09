@@ -7,8 +7,6 @@ int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-int sum = SumNumber(M, N);
-
 int SumNumber(int firstNumber, int secondNumber)
 {
     if (firstNumber == secondNumber) return firstNumber;
@@ -16,4 +14,4 @@ int SumNumber(int firstNumber, int secondNumber)
             else return firstNumber + SumNumber(firstNumber + 1, secondNumber);
 }
 
-Console.WriteLine($"Сумма элементов от {M} до {N} равна {sum}");
+Console.WriteLine($"Сумма элементов от {M} до {N} равна {SumNumber(M, N)}");
